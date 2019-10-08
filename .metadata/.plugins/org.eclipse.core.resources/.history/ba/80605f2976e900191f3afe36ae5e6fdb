@@ -1,0 +1,5 @@
+package com.nttdata.microservice.image_service.controllers;
+
+public class HomeController {
+
+}

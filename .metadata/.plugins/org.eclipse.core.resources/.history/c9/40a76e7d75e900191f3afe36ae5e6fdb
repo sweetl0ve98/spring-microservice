@@ -1,0 +1,5 @@
+package com.nttdata.microservice.image_service.entities;
+
+public class Image {
+
+}
