@@ -1,22 +1,21 @@
-package com.nttdata.microservice.gallery_service;
+package com.service.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClients;
-import org.springframework.cloud.netflix.ribbon.eureka.EurekaRibbonClientConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableEurekaClient 
 public class GalleryApp {
-    public static void main(String[] args) {
-        SpringApplication.run(GalleryApp.class, args);
-    }
+
+	public static void main(String[] args) {
+		SpringApplication.run(GalleryApp.class, args);
+	}
+
 }
 
 @Configuration
@@ -28,6 +27,4 @@ class RestTemplateConfig {
 	public RestTemplate restTemplate() {
 	    return new RestTemplate();
 	}
-	
-	
 }

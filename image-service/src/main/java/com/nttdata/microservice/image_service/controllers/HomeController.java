@@ -24,4 +24,10 @@ public class HomeController {
 			new Image(3, "The Last Traction Hero", "https://www.imdb.com/title/tt0096697/mediaviewer/rm1445594112"));
 		return images;
 	}
+	
+	@RequestMapping("/test")
+	public String getTest() {
+		String test = "helloasdfasfasdfsadf";
+		return test;
+	}
 }
